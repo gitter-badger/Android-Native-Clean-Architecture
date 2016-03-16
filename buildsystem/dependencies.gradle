@@ -6,7 +6,7 @@ allprojects {
 
 ext {
     //Android global
-    build = "24.0.0 rc1"
+    build = "23.0.1"
     min = 14
     target = 23
     compile = 23
