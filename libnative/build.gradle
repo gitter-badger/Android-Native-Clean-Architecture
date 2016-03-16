@@ -1,8 +1,10 @@
 apply plugin: 'com.android.library'
 
 android{
-    compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    def gConf = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion gConf.getAt("compile")
+    buildToolsVersion gConf.getAt("build")
 
     defaultConfig {
 
