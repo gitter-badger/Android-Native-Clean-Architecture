@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    def gConf = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion gConf.getAt("compile")
+    buildToolsVersion gConf.getAt("build")
+
+    defaultConfig {
+        minSdkVersion gConf.getAt("min")
+        targetSdkVersion gConf.getAt("target")
+
+        applicationId gConf.getAt("appId")
+        versionCode gConf.getAt("versionCode")
+        versionName gConf.getAt("versionName")
+        testApplicationId gConf.getAt("testId")
+    }
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions{
+
+    }
+
+    lintOptions{
+
+    }
+
+    signingConfigs{
+
+    }
+
+    buildTypes{
+
+    }
+}
+
+dependencies{
+    def presentationDep = rootProject.ext.presentation
+
+    compile project(':data')
+    compile project(':libnative')
+
+    compile presentationDep.support
+    compile presentationDep.appcompat
+    compile presentationDep.annotations
+
+}

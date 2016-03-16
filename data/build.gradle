@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android{
+    def gConf = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion gConf.getAt("compile")
+    buildToolsVersion gConf.getAt("build")
+
+    defaultConfig {
+        minSdkVersion gConf.getAt("min")
+        targetSdkVersion gConf.getAt("target")
+        versionCode gConf.getAt("versionCode")
+    }
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions{
+
+    }
+
+    lintOptions{
+
+    }
+
+    signingConfigs{
+
+    }
+
+    buildTypes{
+
+    }
+}
+
+dependencies{
+
+}

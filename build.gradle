@@ -1,0 +1,23 @@
+apply from: 'buildsystem/dependencies.gradle'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0-alpha1'
+    }
+}
+
+allprojects {
+    ext {
+        appId = 'com.twere.android.nativearchitecture'
+        versionCode = 1
+        versionName = "1.0"
+        testId = 'com.twere.android.nativearchitecture.test'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

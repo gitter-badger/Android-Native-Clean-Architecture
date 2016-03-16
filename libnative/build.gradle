@@ -1,0 +1,103 @@
+apply plugin: 'com.android.library'
+
+android{
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+
+        ndk {
+            moduleName "libnative"
+            ldLibs "log"
+            cFlags "-DANDROID_NDK_HOME"
+        }
+    }
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions{
+
+    }
+
+    lintOptions{
+
+    }
+
+    signingConfigs{
+
+    }
+
+    buildTypes{
+
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        foss {
+            debuggable false
+            jniDebuggable false
+        }
+    }
+
+    //native
+
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/libs'
+        java.srcDirs = ['src']
+        resources.srcDirs = ['src']
+        aidl.srcDirs = ['src']
+        renderscript.srcDirs = ['src']
+        jni.srcDirs = ['jni']
+    }
+
+    sourceSets.debug {
+
+    }
+
+    sourceSets.release {
+
+    }
+
+    sourceSets.foss {
+
+    }
+
+    productFlavors {
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        mips {
+            ndk {
+                abiFilter "mips"
+            }
+        }
+        armv7 {
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+        arm {
+            ndk {
+                abiFilter "armeabi"
+            }
+        }
+        fat
+    }
+}
+
+dependencies{
+
+}
