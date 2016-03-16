@@ -22,19 +22,19 @@ android {
     }
 
     packagingOptions{
-
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
     }
 
     lintOptions{
-
-    }
-
-    signingConfigs{
-
-    }
-
-    buildTypes{
-
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'InvalidPackage'
+        disable 'OldTargetApi'
     }
 }
 
