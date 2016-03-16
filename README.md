@@ -1,0 +1,6 @@
+Android-Native-Clean-Architecture  [![Build Status](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture.svg?branch=master)](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture)
+==================================================================================================================================================================================================================
+
+Clean architecture
+-----------------
+![](https://blog.8thlight.com/assets/posts/2012-08-13-the-clean-architecture/CleanArchitecture-81565aba46f035911a5018e77a0f2d4e.jpg)

@@ -7,14 +7,11 @@ android{
     buildToolsVersion gConf.getAt("build")
 
     defaultConfig {
-        minSdkVersion gConf.getAt("min")
-        targetSdkVersion gConf.getAt("target")
-        versionCode gConf.getAt("versionCode")
     }
 
     compileOptions{
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 
     packagingOptions{

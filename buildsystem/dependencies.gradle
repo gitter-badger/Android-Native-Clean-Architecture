@@ -8,8 +8,8 @@ ext {
     //Android global
     build = "24.0.0 rc1"
     min = 14
-    target = 'N'
-    compile = 'android-N'
+    target = 23
+    compile = 23
 
     //Android libs
     sdkVer = '23.0.1'
@@ -20,10 +20,10 @@ ext {
     espressoVer = '2.0'
 
     presentation = [
-            support   : "com.android.support:appcompat-v7:$sdkVer",
-            appcompat : "com.android.support:appcompat-v7:$sdkVer",
+            support    : "com.android.support:appcompat-v7:$sdkVer",
+            appcompat  : "com.android.support:appcompat-v7:$sdkVer",
             annotations: "com.android.support:support-annotations:$sdkVer",
-            design    : "com.android.support:design::$sdkVer",
+            design     : "com.android.support:design::$sdkVer",
     ]
 
     presentationTest = [
