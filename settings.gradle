@@ -1,4 +1,3 @@
 include ':presentation'
-include':libnative'
 include ':data'
 include ':presentation'

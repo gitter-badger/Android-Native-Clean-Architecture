@@ -6,13 +6,13 @@ allprojects {
 
 ext {
     //Android global
-    build = "23.0.1"
-    min = 14
+    build = "24.0.0 rc1"
+    min = 15
     target = 23
     compile = 23
 
     //Android libs
-    sdkVer = '23.0.1'
+    sdkVer = '21.0.3'
 
     //Testing libs
     junitVer = '4.12'

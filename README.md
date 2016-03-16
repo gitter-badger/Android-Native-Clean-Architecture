@@ -1,5 +1,7 @@
-Android-Native-Clean-Architecture  [![Build Status](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture.svg?branch=master)](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture)
+Android Native Clean Architecture  [![Build Status](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture.svg?branch=master)](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture)
 ==================================================================================================================================================================================================================
+
+![Logo](presentation/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 Clean architecture
 -----------------
@@ -8,4 +10,3 @@ Clean architecture
 MVP
 ---
 ![](http://i2.wp.com/www.tinmegali.com/wp-content/uploads/2016/03/MVP_2-en.png?resize=800%2C620)
-
