@@ -1,6 +1,8 @@
 Android Native Clean Architecture  [![Build Status](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture.svg?branch=master)](https://travis-ci.org/AdamLuisSean/Android-Native-Clean-Architecture)
 ==================================================================================================================================================================================================================
 
+[![Join the chat at https://gitter.im/AdamLuisSean/Android-Native-Clean-Architecture](https://badges.gitter.im/AdamLuisSean/Android-Native-Clean-Architecture.svg)](https://gitter.im/AdamLuisSean/Android-Native-Clean-Architecture?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Logo](presentation/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 Clean architecture
